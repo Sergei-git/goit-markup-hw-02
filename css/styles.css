@@ -32,7 +32,7 @@ body {
 .header-navigation {
 }
 
-.header-navigation .link {
+.header-navigation.link {
   text-transform: uppercase;
 }
 
@@ -89,6 +89,7 @@ body {
 
 /* MAIN */
 .hero {
+  background-color: var(--primary-text-color);
 }
 .hero-title {
   font-weight: 700;
@@ -96,7 +97,6 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white-color);
-  background-color: var(--primary-text-color);
 }
 
 .pointer {
@@ -125,6 +125,20 @@ body {
   visibility: hidden;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .features-list {
 }
 .features-item {
@@ -146,7 +160,7 @@ body {
 .doing-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px1.11;
+  line-height: 1.11;
   letter-spacing: 0.02em;
 }
 .doing-list {
