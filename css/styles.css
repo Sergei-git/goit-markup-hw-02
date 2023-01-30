@@ -1,25 +1,22 @@
-/* ВИХІДНІ ДАНІ */
-/* Шрифти Roboto 400,500,700 Raleway 800 */
-/* цвет текста навигация и заглавия #2E2F42; */
-
-/* цвет текста WEB #4D5AE5; */
-/* цвет текста белый Studio #F4F4FD; */
-/* цвет текста адрес и абзацы #434455; */
-/* цвет текста hero белый #FFFFFF; */
-/* цвет текста footer белый #E7E9FC; */
-/* portfolio */
-/* цвет текста кнопки фильтр #4D5AE5; */
-
-/* ----- Стилі головної сторінки -----  */
-
 :root {
-  --adress-and-text-color: #434455;
+  --primary-text-color: #2e2f42;
+  --adress-and-text-color: #434343;
+  --background-team-color: #f4f4fd;
+  --web-and-btn-text-color: #4d5ae5;
+  --footer-background-color: #2e2f42;
+  --footer-studio-text-color: #f4f4fd;
+  --footer-text-color: #e7e9fc;
+  --activ-text-color: #404bbf;
+  --white-color: #ffffff;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #2e2f42;
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
 }
+
+/* ----- Стилі головної сторінки -----  */
 
 /* HEADER */
 .link {
@@ -34,26 +31,30 @@ body {
 }
 .header-navigation {
 }
+
+.header-navigation .link {
+  text-transform: uppercase;
+}
+
 .header-logo {
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  color: #2e2f42;
+  color: var(--primary-text-color);
 }
 
 .blue-word {
-  color: #4d5ae5;
+  color: var(--web-and-btn-text-color);
 }
 
 .header-list .link:hover,
 .header-list .link:focus {
-  color: #404bbf;
+  color: var(--activ-text-color);
 }
 
 .header-list .link.current {
-  color: #404bbf;
+  color: var(--activ-text-color);
 }
 
 .header-item {
@@ -63,27 +64,23 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--primary-text-color);
 }
 
 .adress-list .link:hover,
 .adress-list .link:focus {
-  color: #404bbf;
+  color: var(--activ-text-color);
 }
 
 .header-mail {
-  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--adress-and-text-color);
 }
 .header-tel {
-  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -98,19 +95,36 @@ body {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #ffffff;
-  background: #2e2f42;
+  color: var(--white-color);
+  background-color: var(--primary-text-color);
 }
+
+.pointer {
+  cursor: pointer;
+}
+
+.hero-title .link:hover,
+.hero-title .link:focus {
+  color: var(--activ-text-color);
+}
+
 .hero-btn {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #4d5ae5;
+  color: var(--white-color);
+  background-color: var(--web-and-btn-text-color);
 }
+
 .features {
 }
+
+.o-hide {
+  visibility: hidden;
+}
+
 .features-list {
 }
 .features-item {
@@ -122,7 +136,6 @@ body {
   letter-spacing: 0.02em;
 }
 .features-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -141,6 +154,7 @@ body {
 .doing-item {
 }
 .team {
+  background-color: var(--background-team-color);
 }
 .team-title {
   font-weight: 700;
@@ -159,7 +173,6 @@ body {
   letter-spacing: 0.02em;
 }
 .team-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -168,7 +181,13 @@ body {
 
 /* FOOTER */
 .footer {
+  background-color: var(--footer-background-color);
 }
+
+.footer .link {
+  text-transform: uppercase;
+}
+
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -176,28 +195,14 @@ body {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #f4f4fd;
-  background-color: #2e2f42;
+  color: var(--footer-studio-text-color);
 }
 .footer-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #e7e9fc;
-  background-color: #2e2f42;
+  color: var(--footer-text-color);
 }
-
-/* Button */
-/* цвет текста кнопка Order color: #FFFFFF; */
-/* цвет текста Filters color: #4D5AE5; */
-
-/* .button {
-  color: color: #4D5AE5;
-  background: #F4F4FD;
-}  см. Репета 2:15, урок 1  */
-
-/* ----- Стили для portfolio ----- */
 
 .portfolio {
 }
@@ -206,13 +211,24 @@ body {
 .list {
 }
 .portfolio-filter-btn {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background: #f4f4fd;
+  color: var(--web-and-btn-text-color);
 }
+
+.portfolio-filter-list .link:hover,
+.portfolio-filter-list .link:focus {
+  color: var(--white-color);
+  background-color: var(--activ-text-color);
+}
+
+.header-list .link.current {
+  color: var(--activ-text-color);
+}
+
 .portfolio-list {
 }
 .portfolio-item {
@@ -222,12 +238,11 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--primary-text-color);
 }
 .portfolio-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--adress-and-text-color);
 }
